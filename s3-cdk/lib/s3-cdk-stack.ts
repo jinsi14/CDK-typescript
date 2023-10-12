@@ -6,14 +6,8 @@ export class S3CdkStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const bucket = new s3.CfnBucket(this, "cdk-typescript-ap-south-1", {
-      bucketName: "cdk-typescript-ap-south-1",
-      corsConfiguration: {
-        corsRules: [{
-              allowedOrigins: ["*"],
-              allowedMethods: ["GET"]
-        }]
-      }
+    const bucket = new s3.CfnBucket(this, "cdk-typescript-ap-south-1-829293625760", {
+      bucketName: "cdk-typescript-ap-south-1-829293625760",
     });
   }
 }
